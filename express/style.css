@@ -221,6 +221,7 @@ ul {
   align-items:center;
   padding: 100px var(--padding-side);
   height:100%;
+  background-size: 100%;
 }
 
 #MainBanner--left,
