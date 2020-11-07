@@ -97,7 +97,7 @@ ul {
 }
 
 .Header {
-  font-size:1.9rem;
+  font-size:2.3rem;
   font-weight: bold;
 }
 .SubHeader {
@@ -105,8 +105,8 @@ ul {
 }
 
 .shadow__second__color {
-  -webkit-box-shadow: inset 0px -6px 0px 0px var(--second-color);
-  box-shadow: inset 0px -6px 0px 0px var(--second-color);
+  -webkit-box-shadow: inset 0px -12px 0px 0px var(--second-color);
+  box-shadow: inset 0px -12px 0px 0px var(--second-color);
 }
 
 /*---------------- Avatar CSS ----------------*/
@@ -176,8 +176,8 @@ ul {
 
 .logo {
   color:var(--second-color) !important;
-  font-size:3rem !important;
-  line-height:2rem !important;
+  font-size:3.4rem !important;
+  line-height:2.5rem !important;
   font-weight:bold !important;
 }
 
@@ -195,6 +195,10 @@ ul {
 #Navbar-navigation .element-list-inline,
 #Navbar-connection .element-list-inline {
   margin: 0rem 1rem;
+}
+
+#Navbar-navigation .element-list-inline a {
+  padding-bottom:0;
 }
 
 #Navbar-navigation .element-list-inline a,
