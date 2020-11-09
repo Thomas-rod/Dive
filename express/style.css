@@ -100,7 +100,7 @@ ul {
   font-size:2.3rem;
   font-weight: bold;
 }
-.SubHeader {
+.sub-header {
   font-size:1.3rem;
 }
 
@@ -213,9 +213,9 @@ ul {
 }
 
 
-/*---------------- MainBanner CSS ----------------*/
+/*---------------- main-banner CSS ----------------*/
 
-#MainBanner {
+#main-banner {
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -224,46 +224,55 @@ ul {
   background-size: 100%;
 }
 
-#MainBanner--left,
-#MainBanner--right {
+#main-banner--left,
+#main-banner--right {
   max-width:50%;
 }
 
-#MainBanner--left {
+#main-banner--left {
   padding-top:5rem;
 }
 
-#MainBanner--left .Title {
+#main-banner--left .Title {
   margin-bottom:3rem;
 }
 
-#MainBanner--left .SubHeader {
+#main-banner--left .sub-header {
   margin-bottom:3rem;
 }
 
-#MainBanner--left .SubHeader:last-child {
+#main-banner--left .sub-header:last-child {
   padding-top:3rem;
 }
 
-#MainBanner--right > img {
+#button-main-banner {
+  width:fit-content;
+  display:block;
+  margin: 2rem auto;
+  font-weight:bold;
+}
+
+#main-banner--right > img {
   display:block;
   margin-left:auto;
   width:90%;
 }
 
+
+
 /*---------------- Second Banner CSS ----------------*/
 
-#SecondBanner {
+#second-banner {
   padding: var(--padding-top) var(--padding-side);
 }
 
-#SecondBanner .Header {
+#second-banner .Header {
   width:fit-content;
   margin: 0 auto;
   text-align:center;
 }
 
-#SecondBanner img {
+#second-banner img {
   display:block;
   width:90%;
   margin: 5rem auto 0rem auto;
@@ -272,55 +281,55 @@ ul {
 
 /*---------------- Side Banner CSS ----------------*/
 
-.BannerSide {
+.banner-side {
   display:flex;
   justify-content:space-between;
   padding: var(--padding-top) var(--padding-side);
 }
 
-.BannerSide:nth-child(odd) {
+.banner-side:nth-child(odd) {
   flex-direction:row-reverse;
 }
 
-.BannerSide-Header,
-.BannerSide-List {
+.banner-side-Header,
+.banner-side-List {
   width:45%;
 }
 
-.BannerSide-Header > .SubHeader {
+.banner-side-Header > .sub-header {
   font-weight:bold;
   display:flex;
   align-items:center;
   font-size:1.5rem;
 }
 
-.BannerSide-Header > img {
+.banner-side-Header > img {
   display:block;
   margin: 0 auto;
 }
 
-.BannerSide-Header > .SubHeader > .SubHeader-Number {
+.banner-side-Header > .sub-header > .sub-header-Number {
   font-size: 2.5rem;
   color: var(--second-color);
   padding-right:1rem;
 }
 
-.BannerSide-List {
+.banner-side-List {
   align-self:center;
 }
 
-.BannerSide-List-Element {
+.banner-side-List-Element {
   display:flex;
   justify-content:start;
   align-items:center;
   padding:1rem 0rem;
 }
 
-.BannerSide-List-Element .bubble {
+.banner-side-List-Element .bubble {
   margin-right:1rem;
 }
 
-.BannerSide-List-Element p {
+.banner-side-List-Element p {
   font-size:1.2rem;
   line-height:1.7rem;
 }
@@ -337,7 +346,7 @@ ul {
 
 
 /*---------------- Quotes Banner CSS ----------------*/
-#QuoteBanner {
+#quote-banner {
   margin-top: var(--padding-top);
   padding: var(--padding-top) var(--padding-side);
   display:flex;
@@ -346,34 +355,34 @@ ul {
   background-color:var(--main-color);
 }
 
-#QuoteBanner > img {
+#quote-banner > img {
   margin-right: 3rem;
 }
 
-#QuoteBanner-Text {
+#quote-banner-Text {
   flex-grow:2;
 }
 
-#QuoteBanner-Text h3,
-#QuoteBanner-Text p {
+#quote-banner-Text h3,
+#quote-banner-Text p {
   font-weight:bold;
 }
 
-#QuoteBanner-Text p {
+#quote-banner-Text p {
   padding-top: 1rem;
 }
 /*---------------- Last Banner CSS ----------------*/
-#LastBanner {
+#last-banner {
   width:60%;
   margin-top: var(--padding-top);
   padding: var(--padding-top) var(--padding-side);
 }
 
-#LastBanner p {
+#last-banner p {
   padding-top: 1rem;
 }
 
-#LastBanner .button__main {
+#last-banner .button__main {
   display:block;
   width:fit-content;
   margin:1rem 0rem;
@@ -394,31 +403,31 @@ ul {
   margin-right: 15%;
 }
 
-#footerDiscover,
-#footerContact {
+#footer-discover,
+#footer-contact {
   margin: 0rem 5%;
   width:fit-content;
 }
 
-#footerDiscover h3,
-#footerDiscover p,
-#footerDiscover a,
-#footerContact p {
+#footer-discover h3,
+#footer-discover p,
+#footer-discover a,
+#footer-contact p {
   color:white;
 }
 
-#footerDiscover .SubHeader {
+#footer-discover .sub-header {
   font-weight:bold;
   margin-bottom:1rem;
 }
 
-.footerContact-Element {
+.footer-contact-Element {
   display:flex;
   justify-content:start;
   align-items:center;
 }
 
-.footerContact-Element i {
+.footer-contact-Element i {
   font-size:1.2rem;
   color:white;
   margin-right:1rem;
@@ -441,51 +450,51 @@ ul {
     display:none;
   }
 
-  #MainBanner,
-  .BannerSide,
-  #QuoteBanner {
+  #main-banner,
+  .banner-side,
+  #quote-banner {
     display:block;
   }
 
-  #MainBanner--left,
-  #MainBanner--right,
-  #MainBanner--right img,
-  .BannerSide-Header,
-  .BannerSide-List,
-  #SecondBanner img,
-  #LastBanner {
+  #main-banner--left,
+  #main-banner--right,
+  #main-banner--right img,
+  .banner-side-Header,
+  .banner-side-List,
+  #second-banner img,
+  #last-banner {
     width:100% !important;
     max-width:100% !important;
     text-align:center;
   }
 
-  #SecondBanner .Header {
+  #second-banner .Header {
     box-shadow:unset;
     -webkit-box-shadow: unset;
     text-decoration:underline var(--second-color);
   }
 
-  .BannerSide-Header > img {
+  .banner-side-Header > img {
     width:70%;
   }
 
-  #QuoteBanner > img {
+  #quote-banner > img {
     display:block;
     margin: 0 auto 2rem auto;
   }
-  #QuoteBanner h3,
-  #QuoteBanner p {
+  #quote-banner h3,
+  #quote-banner p {
     padding-bottom:1rem;
     text-align:center;
   }
 
-  #LastBanner .button__main {
+  #last-banner .button__main {
     margin: 2rem auto;
   }
 
 
-  #footerDiscover,
-  #footerContact {
+  #footer-discover,
+  #footer-contact {
     display:none;
   }
 
