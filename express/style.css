@@ -248,7 +248,7 @@ ul {
 #button-main-banner {
   width:fit-content;
   display:block;
-  margin: 2rem auto;
+  margin: 2rem auto 2rem 0rem;
   font-weight:bold;
 }
 
