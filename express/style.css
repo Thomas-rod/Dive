@@ -14,7 +14,7 @@
 body {
   font-family: 'Lato', 'sans-serif', 'serif';
   margin: 0;
-  border-box
+  box-sizing:border-box;
 }
 
 h1,
@@ -222,6 +222,8 @@ ul {
   padding: 100px var(--padding-side);
   height:100%;
   background-size: 100%;
+  background-position:center;
+  background-size:cover;
 }
 
 #main-banner--left,
@@ -436,12 +438,6 @@ ul {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 400px) {
-
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 768px) and (max-width: 400px){
   :root {
     --padding-side: 2rem;
   }
@@ -466,6 +462,82 @@ ul {
     width:100% !important;
     max-width:100% !important;
     text-align:center;
+  }
+
+  #button-main-banner {
+    display:block;
+    width:fit-content;
+    margin: 0 auto;
+  }
+
+  #second-banner .Header {
+    box-shadow:unset;
+    -webkit-box-shadow: unset;
+    text-decoration:underline var(--second-color);
+  }
+
+  .banner-side-Header > img {
+    width:70%;
+  }
+
+  #quote-banner > img {
+    display:block;
+    margin: 0 auto 2rem auto;
+  }
+  #quote-banner h3,
+  #quote-banner p {
+    padding-bottom:1rem;
+    text-align:center;
+  }
+
+  #last-banner .button__main {
+    margin: 2rem auto;
+  }
+
+
+  #footer-discover,
+  #footer-contact {
+    display:none;
+  }
+
+  #footer .logo {
+    margin: 0 auto;
+  }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) and (min-width: 400px){
+  :root {
+    --padding-side: 2rem;
+  }
+
+  #Navbar-navigation li:not(:first-child) {
+    display:none;
+  }
+
+  #main-banner,
+  .banner-side,
+  #quote-banner {
+    display:block;
+  }
+
+  #main-banner--left,
+  #main-banner--right,
+  #main-banner--right img,
+  .banner-side-Header,
+  .banner-side-List,
+  #second-banner img,
+  #last-banner {
+    width:100% !important;
+    max-width:100% !important;
+    text-align:center;
+  }
+
+  #button-main-banner {
+    display:block;
+    width:fit-content;
+    margin: 0 auto;
   }
 
   #second-banner .Header {
